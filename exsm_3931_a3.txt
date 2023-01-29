@@ -1,0 +1,58 @@
+Pseudocode in the view of a machine owner
+vending_machine_content_price = {chips:2.50, candy_packs: 2.00, granola_bars: 1.50}
+payment_option = coins
+change_back option = coins
+
+customer insert money{
+    If (money input value ≥ 1.5) then
+        display "Press 1 to continue, Press 2 to cancel your order"
+    If customer pressed 2 then
+        dispense customer's money back
+    If customer pressed 1 then
+        display "welcome! Plese select your item"
+    If (selected item value > money input value) then
+        disply "Please add more funds for your selected item or Press 2 to cancel your order"
+    If customer pressed 2 then
+        dispense customer's money back
+    If (selected item value < money input value) then
+        dispense the selected item
+        dispense change
+    If (selected item value = money input value) then
+        dispense the selected item
+display "Thank you, enjoy!"
+}
+
+check vending machine status = {frequency ≥ 1 per week}
+unlock the machine{
+    If enough snacks for sale then
+        no replenishment needed
+    Else then 
+        restock
+    If coins in the storage box then
+        empty the box
+    If sufficient change in the change box then
+        no replenishment needed
+    Else then 
+        restock
+}
+Lock the machine
+
+
+Pseudocode in the view of a hungry customer
+check available items and their price = {chips: 2.50, candy_packs: 2.00, granola_bars: 1.50}
+check available funds{
+    If (coins value ≥ 1.5) then
+        proceed
+    Else then
+    cry and leave
+    }
+insert coins
+make selection by pressing code for the affordble snack (e.g. A1 = chips, B1 = candy_packs, C1 = granola_bars)
+selected item dispesed
+pick up the item{
+    If (selected item value < money input value) then
+        pick up any change dispensed
+    Else then 
+        no need to wait for change
+}
+consume the snack as soon as possible because I am hungary
