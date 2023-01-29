@@ -19,7 +19,7 @@ customer insert money{
         dispense change
     If (selected item value = money input value) then
         dispense the selected item
-display "Thank you, enjoy!"
+display "Thank you, please enjoy!"
 }
 
 check vending machine status = {frequency ≥ 1 per week}
